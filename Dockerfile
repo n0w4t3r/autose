@@ -1,7 +1,10 @@
 FROM ubuntu:22.04
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # 필요 패키지 설치
-RUN apt-get update && apt-get install -y tzdata\  
+RUN apt-get update && apt-get install -y \
+    tzdata \
     git \
     make \
     g++ \
