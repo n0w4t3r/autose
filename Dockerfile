@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 RUN git clone https://github.com/pjreddie/darknet
 
 # Darknet 이동
-WORKDIR darknet
+WORKDIR /darknet
 
 RUN make
 
